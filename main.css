@@ -129,9 +129,26 @@ body {
 
 /* логотип */
 .logo-menu {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
     margin-bottom: 40px;
     border-radius: 15px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .logo-menu {
+        max-width: 250px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-menu {
+        max-width: 180px;
+        margin-bottom: 20px;
+    }
 }
 
 /* список  в меню */
@@ -235,6 +252,44 @@ body {
     background: var(--pink-dark);
     transform: translateY(-3px);
     box-shadow: 0 6px 25px rgba(229, 158, 255, 0.5);
+}
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 60px;
+    }
+    .hero-subtitle {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 500px;
+        height: auto;
+        padding: 100px 0;
+    }
+    .hero-title {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+    .hero-subtitle {
+        font-size: 20px;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+    .hero__btn {
+        padding: 12px 35px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 32px;
+    }
+    .hero-subtitle {
+        font-size: 16px;
+    }
 }
 
 /*секции*/
